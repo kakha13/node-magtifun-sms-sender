@@ -1,5 +1,7 @@
 # NODE Magtifun SMS Sender
 
+Demo: https://magtifun.herokuapp.com/
+
 main.html წამოადგენს html ფორმას რომელის საშუალებითაც შეგიძლიათ გადასცეთ საჭირო მონაცემები api -ს
 
 ასევე შეგიძლიათ პირდაპირ post მოთხოვნით მიაკითხოთ /api -ს მისამართზე
