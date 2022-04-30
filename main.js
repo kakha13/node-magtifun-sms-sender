@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
 
 async function main(data) {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
     const page = await browser.newPage();
     await page.goto('http://www.magtifun.ge/', { waitUntil: 'networkidle0' }); // wait until page load
     await page.type('#user', data.phone);
@@ -56,4 +56,4 @@ app.post('/api',(req, res) => {
     res.json({status:"success"})
 })
 
-app.listen(3000)
+app.listen( process.env.PORT || 3000)
